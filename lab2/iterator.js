@@ -12,6 +12,6 @@ export const Iteration = (generator, timer) => {
     while (new Date().getTime() < end){
         const res = iterator.next();
         const color = colorGen.next().value;
-        console.log(`${color}Value: ${res.value}\x1b[0m`);
+        console.log(color(`Value: ${res.value}`));
     }
 };

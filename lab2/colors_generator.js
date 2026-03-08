@@ -1,11 +1,13 @@
+import chalk from 'chalk';
+
 export function* Color() {
     const colors = [
-        "\x1b[31m", // red
-        "\x1b[32m", // green
-        "\x1b[33m", // yellow
-        "\x1b[34m", // blue
-        "\x1b[35m", // magenta
-        "\x1b[36m"  // cyan
+        chalk.red,
+        chalk.green,
+        chalk.yellow,
+        chalk.blue,
+        chalk.magenta,
+        chalk.cyan
     ];
     let i = 0;
     while(true){
