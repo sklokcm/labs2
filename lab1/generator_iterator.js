@@ -17,10 +17,9 @@ const Iteration = (generator, timer) => {
     const iterator = iterable[Symbol.iterator]();
     while (new Date().getTime() < end){
         const res = iterator.next();
-        console.log(`Value: ${res.value} \n`);
+        console.log(`Value: ${res.value}`);
     }
 };
 
 Iteration(Generation(), 0.01);
-console.log(sum);
 

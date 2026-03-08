@@ -1,4 +1,4 @@
-import {Generation} from "./fibonachi_generator.js";
+import {Generation} from "./fibonachi_generator.js";  
 import {Iteration} from "./iterator.js";
 
 
