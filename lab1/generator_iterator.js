@@ -1,3 +1,5 @@
+'use strict';
+
 function* Generation(){
     let a = 1n, b = 1n, c = 1n;
     while(true){
@@ -16,7 +18,9 @@ const Iteration = (generator, timer) => {
     while (new Date().getTime() < end){
         const res = iterator.next();
         console.log(`Value: ${res.value} \n`);
-  }
+    }
 };
 
-Iteration(Generation(), 0.1);
+Iteration(Generation(), 0.01);
+console.log(sum);
+
