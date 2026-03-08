@@ -1,5 +1,7 @@
-import {Generation} from "./fibonachi_generator.js";  
+import {FibonachiGeneration} from "./fibonachi_generator.js";  
+import {AlphabetGeneration} from "./alphabet_generator.js";
 import {Iteration} from "./iterator.js";
 
 
-Iteration(Generation(), 0.01);
+Iteration(FibonachiGeneration(), 0.01);
+Iteration(AlphabetGeneration(), 0.01);

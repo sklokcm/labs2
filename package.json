@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/sklokcm/labs2/issues"
   },
-  "homepage": "https://github.com/sklokcm/labs2#readme"
+  "homepage": "https://github.com/sklokcm/labs2#readme",
+  "dependencies": {
+    "chalk": "^5.6.2"
+  }
 }
