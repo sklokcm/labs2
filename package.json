@@ -2,7 +2,7 @@
   "name": "labs2",
   "version": "1.0.0",
   "description": "Лабораторні з ОП2 Бойчука Андрія ІМ-53",
-  "main": "index.js",
+  "main": " main.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,5 +20,11 @@
   "homepage": "https://github.com/sklokcm/labs2#readme",
   "dependencies": {
     "chalk": "^5.6.2"
-  }
+  },
+  "exports": {
+    "./alphabet": "./lab2/alphabet_generator.js",
+    "./colors": "./lab2/colors_generator.js",
+    "./fibonachi": "./lab2/fibonachi_generator.js"
+  },
+  "devDependencies": {}
 }
