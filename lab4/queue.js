@@ -2,9 +2,10 @@
 class PriorityQueue{
     constructor(){
         this.items = [];
+        this.counter = 0;
     }
 
-    enqueue(value,priority){
+    enqueue(value, priority){
         const newItem = {value, priority};
         let added = false;
         for(let i = 0; i<this.items.length; i++){
@@ -18,28 +19,36 @@ class PriorityQueue{
         if(!added){
             this.items.push(newItem);
         }
+
     }
 
-    dequeue(){
-        return this.items.shift();
+    dequeue(mode="highest"){
+        if(mode==="highest") {
+            return this.items.shift();}
+        else if(mode==="lowest"){
+            return this.items.pop();
+        }
     }
 
     peek(){
         return this.items[0];
     }
 
-    isEmpty(){
-        return this.items.length===0;
-    }
 }
 
 
 const queue = new PriorityQueue;
 
-queue.enqueue("low priority", 7);
-queue.enqueue("avarage priority", 3);
-queue.enqueue("highest priority", 1);
+queue.enqueue("A", 6);
+queue.enqueue("B", 2);
+queue.enqueue("C", 1);
+queue.enqueue("D", 4);
+queue.enqueue("E", 5);
+queue.enqueue("F", 3);
 
-console.log(queue.dequeue());
-console.log(queue.dequeue());
+console.log(queue.dequeue("highest"));
+console.log(queue.dequeue("lowest"));
+console.log(queue.dequeue("highest"));
+console.log(queue.dequeue("lowest"));
+console.log(queue.dequeue("lowest"));
 console.log(queue.dequeue());
