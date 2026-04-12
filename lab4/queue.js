@@ -66,16 +66,29 @@ class PriorityQueue{
 
 const queue = new PriorityQueue;
 
-queue.enqueue("A", 6);
+queue.enqueue("A", 4);
 queue.enqueue("B", 2);
 queue.enqueue("C", 1);
 queue.enqueue("D", 4);
 queue.enqueue("E", 5);
 queue.enqueue("F", 3);
+queue.enqueue("G", 2);
+queue.enqueue("H", 1);
+queue.enqueue("I", 1);
+queue.enqueue("J", 3);
+
 
 console.log(queue.dequeue("highest"));
 console.log(queue.dequeue("lowest"));
-console.log(queue.dequeue("highest"));
+console.log(queue.dequeue("newest"));
 console.log(queue.dequeue("lowest"));
+console.log(queue.dequeue("oldest"));
+console.log(queue.dequeue());
+console.log(queue.peek("lowest"));
+console.log(queue.peek("oldest"));
+console.log(queue.peek("newest"));
+console.log(queue.peek("highest"));
+console.log(queue.dequeue("highest"));
+console.log(queue.dequeue("oldest"));
 console.log(queue.dequeue("lowest"));
 console.log(queue.dequeue());
